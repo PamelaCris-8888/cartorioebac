@@ -130,9 +130,10 @@ int main() //Função principal
 	
 		printf("###Cartório da EBAC###\n\n"); //inicio do menu
 		printf("Escolha a opção desejada do menu:\n\n"); // responsavel por copiar valores da string
-		printf("\t1 - Registrar nomes\n"); //"\t" cria uma espaço, // responsavel por copiar valores da string 
-		printf("\t2 - Consultar nomes\n"); //"\t" cria uma espaço, // responsavel por copiar valores da string
-		printf("\t3 - Deletar nomes\n\n"); //"\t" cria uma espaço, // responsavel por copiar valores da string
+		printf("\t1 - Registrar nomes\n"); 
+		printf("\t2 - Consultar nomes\n"); 
+		printf("\t3 - Deletar nomes\n");
+		printf("\t4 - Sair do sistema.\n\n");
 		printf("opção:"); // fim do menu
 	
 		scanf("%d", &opcao); //armazenando a escolha do usuario   
@@ -147,13 +148,18 @@ int main() //Função principal
     		registro(); //chamar a função registro
     		break; //parar atividade e seguir para a próxima
     		
-    		case 2: //caso opção 2
-    		consulta(); //chamar a função consulta
-			break; //parar atividade e seguir para a próxima
+    		case 2:
+    		consulta(); 
+			break; 
 			
-			case 3: //caso opção 3
-			deletar(); //chamar a função deletar
-    		break; //parar atividade e seguir para a próxima
+			case 3: 
+			deletar(); 
+    		break; 
+    		
+    		case 4: 
+    		printf("Obrigado por utilizar o sistema!\n");
+    		return 0;
+    		break;
     		
     		default: //função caso nenhuma nenhuma das opções acontecer faça 
     		printf("esta opção não esta disponivel!\n"); // responsavel por copiar valores da string
